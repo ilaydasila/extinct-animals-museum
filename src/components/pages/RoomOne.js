@@ -5,7 +5,7 @@ import Animal from "../Animal";
 import "./roomOne.css";
 
 const RoomOne = (props) => {
-  const [animalList, setAnimal] = useState([
+  const [animalList] = useState([
     {
       id: 1,
       className: "passengerPigeon",
