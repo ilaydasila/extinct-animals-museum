@@ -27,6 +27,13 @@ const RoomOne = (props) => {
       img: "/assets/tecopaPupfish.png",
       details: "Dead",
     },
+    {
+      id: 4,
+      className: "dodo",
+      name: "Dodo",
+      img: "/assets/dodo.png",
+      details: "Dead",
+    },
   ]);
 
   return (
