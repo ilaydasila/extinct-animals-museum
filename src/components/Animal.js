@@ -1,26 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./animal.css";
 
-const Animal = ({
-  id = null,
-  className = "",
-  alt = "",
-  name = "",
-  img = "",
-  onClick = function () {},
-}) => {
-  const imageClick = () => {
-    console.log("Click");
-  };
+import DetailBox from "./DetailBox";
+import Button from "./Button";
+
+const Animal = ({ id, className, alt, name, img }) => {
+  const [show, setShow] = useState(false);
   return (
     <div className={className}>
+      <DetailBox show={show}>
+        <span>{name}</span>
+        <Button onClick={() => setShow(!show)}>close</Button>
+      </DetailBox>
       <img
         id={id}
         name={name}
         src={img}
         alt={alt}
-        onClick={() => imageClick()}
+        onClick={() => setShow(!show)}
       ></img>
     </div>
   );
