@@ -5,6 +5,8 @@ import Animal from "../Animal";
 import "./roomOne.css";
 
 const RoomOne = (props) => {
+  const [siblingFade, setSiblingFade] = useState(true);
+
   const [animalList] = useState([
     {
       id: 1,
@@ -37,7 +39,7 @@ const RoomOne = (props) => {
   ]);
 
   return (
-    <div className='animalList'>
+    <div className={siblingFade ? "sibling-fade" : "animalList"}>
       {animalList.map((animal, i) => {
         return (
           <Animal
@@ -47,6 +49,7 @@ const RoomOne = (props) => {
             name={animal.name}
             title={animal.title}
             img={animal.img}
+            siblingFadeHandler={() => setSiblingFade(!siblingFade)}
           />
         );
       })}
