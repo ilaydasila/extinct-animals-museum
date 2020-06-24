@@ -29,11 +29,13 @@ const Animal = ({
 
   return (
     <div className={className}>
-      <DetailBox show={show} animalName={name}>
-        <div>
-          <img id='map' alt={alt} src={map}></img>
-        </div>
-        <div>{details}</div>
+      <DetailBox
+        show={show}
+        animalName={name}
+        details={details}
+        mapImg={map}
+        alt={alt}
+      >
         <Button onClick={() => handleClosingClick()}>close</Button>
       </DetailBox>
       <img

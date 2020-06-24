@@ -6,7 +6,7 @@ import RoomOne from "./components/pages/RoomOne";
 function App() {
   return (
     <div className='App'>
-      <span>Extinct Animals Museum</span>
+      <span>EXTINCT ANIMALS MUSEUM</span>
       <RoomOne></RoomOne>
     </div>
   );

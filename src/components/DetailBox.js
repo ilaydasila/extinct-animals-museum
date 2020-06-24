@@ -4,23 +4,26 @@ import "./detailBox.css";
 
 import { randomColor } from "../utils/randomColorGenerator";
 
-const DetailBox = ({ show, animalName, children }) => {
+const DetailBox = ({ show, animalName, mapImg, alt, details, children }) => {
   const detailBoxClassName = show
     ? "detailBox display-block"
     : "detailBox display-none";
   const animalNameStyle = {
     textTransform: "uppercase",
     fontWeight: "bold",
-    fontSize: "24px",
+    fontSize: "30px",
     paddingTop: "10px",
     color: randomColor(),
+    fontFamily: "Ribeye Marrow",
   };
   return (
     <div className={detailBoxClassName}>
       <section className='detailBox-main'>
-        <div className='AnimalName' style={animalNameStyle}>
-          {animalName}
+        <div style={animalNameStyle}>{animalName}</div>
+        <div>
+          <img id='map' alt={alt} src={mapImg}></img>
         </div>
+        <div className='animalDetails'>{details}</div>
         {children}
       </section>
     </div>

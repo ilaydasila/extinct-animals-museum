@@ -9,7 +9,7 @@
 
 .detailBox-main {
   position: fixed;
-  background: rgb(255, 255, 255, 0.7);
+  background: rgb(255, 255, 255, 0.8);
   width: 80%;
   height: 80%;
   top: 50%;
@@ -26,12 +26,11 @@
   display: none;
 }
 
-.animalName {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 #map {
   margin: 20px;
   max-width: 220px;
+}
+
+.animalDetails {
+  padding: 0px 15px 0px 15px;
 }

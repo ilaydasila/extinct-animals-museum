@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./button.css";
+
 const Button = ({
   type,
   className = "btn",
@@ -8,7 +10,7 @@ const Button = ({
   children,
 }) => {
   return (
-    <button type={type} disabled={disabled} onClick={onClick}>
+    <button className='btn' type={type} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
