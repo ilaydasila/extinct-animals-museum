@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import Animal from "../Animal";
-import Image from "../Image";
 
 import "./roomOne.css";
 
