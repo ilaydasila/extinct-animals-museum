@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
-import "./animal.css";
-
 import DetailBox from "./DetailBox";
+import Image from "./Image";
 import Button from "./Button";
 
 const Animal = ({
@@ -26,7 +25,6 @@ const Animal = ({
     setShow(!show);
     siblingFadeHandler();
   }
-
   return (
     <div className={className}>
       <DetailBox
@@ -38,13 +36,13 @@ const Animal = ({
       >
         <Button onClick={() => handleClosingClick()}>close</Button>
       </DetailBox>
-      <img
-        id={id}
+      <Image
+        className={className}
         name={name}
-        src={img}
+        img={img}
         alt={alt}
         onClick={() => handleOpeningClick()}
-      ></img>
+      ></Image>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Animal from "../Animal";
+import Image from "../Image";
 
 import "./roomOne.css";
 
@@ -47,23 +48,25 @@ const RoomOne = (props) => {
   ]);
 
   return (
-    <div className={siblingFade ? "sibling-fade" : "animalList"}>
-      {animalList.map((animal, i) => {
-        return (
-          <Animal
-            className={animal.className}
-            key={animal.id}
-            id={animal.id}
-            name={animal.name}
-            title={animal.title}
-            img={animal.img}
-            details={animal.details}
-            map={animal.map}
-            siblingFadeHandler={() => setSiblingFade(!siblingFade)}
-          />
-        );
-      })}
-    </div>
+    <>
+      <div className={siblingFade ? "sibling-fade" : "animalList"}>
+        {animalList.map((animal, i) => {
+          return (
+            <Animal
+              className={animal.className}
+              key={animal.id}
+              id={animal.id}
+              name={animal.name}
+              title={animal.title}
+              img={animal.img}
+              details={animal.details}
+              map={animal.map}
+              siblingFadeHandler={() => setSiblingFade(!siblingFade)}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

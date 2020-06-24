@@ -12,7 +12,7 @@ const DetailBox = ({ show, animalName, mapImg, alt, details, children }) => {
     textTransform: "uppercase",
     fontWeight: "bold",
     fontSize: "30px",
-    paddingTop: "10px",
+    paddingTop: "30px",
     color: randomColor(),
     fontFamily: "Ribeye Marrow",
   };
