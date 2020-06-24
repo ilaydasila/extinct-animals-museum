@@ -14,6 +14,7 @@ const RoomOne = (props) => {
       name: "Passenger Pigeon",
       img: "/assets/passengerPigeon.png",
       details: "Dead",
+      map: "",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ const RoomOne = (props) => {
       name: "Sea Mink",
       img: "/assets/seaMink.png",
       details: "Dead",
+      map: "",
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ const RoomOne = (props) => {
       name: "Tecopa Pupfish",
       img: "/assets/tecopaPupfish.png",
       details: "Dead",
+      map: "",
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ const RoomOne = (props) => {
       name: "Dodo",
       img: "/assets/dodo.png",
       details: "Dead",
+      map: "/assets/dodoMap.png",
     },
   ]);
 
@@ -49,6 +53,8 @@ const RoomOne = (props) => {
             name={animal.name}
             title={animal.title}
             img={animal.img}
+            details={animal.details}
+            map={animal.map}
             siblingFadeHandler={() => setSiblingFade(!siblingFade)}
           />
         );

@@ -24,3 +24,13 @@
 .display-none {
   display: none;
 }
+
+.animalName {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#map {
+  margin: 20px;
+  max-width: 220px;
+}

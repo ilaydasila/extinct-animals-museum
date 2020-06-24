@@ -5,7 +5,16 @@ import "./animal.css";
 import DetailBox from "./DetailBox";
 import Button from "./Button";
 
-const Animal = ({ id, className, alt, name, img, siblingFadeHandler }) => {
+const Animal = ({
+  id,
+  className,
+  alt,
+  name,
+  img,
+  details,
+  map,
+  siblingFadeHandler,
+}) => {
   const [show, setShow] = useState(false);
 
   function handleOpeningClick() {
@@ -20,8 +29,11 @@ const Animal = ({ id, className, alt, name, img, siblingFadeHandler }) => {
 
   return (
     <div className={className}>
-      <DetailBox show={show}>
-        <span>{name}</span>
+      <DetailBox show={show} animalName={name}>
+        <div>
+          <img id='map' alt={alt} src={map}></img>
+        </div>
+        <div>{details}</div>
         <Button onClick={() => handleClosingClick()}>close</Button>
       </DetailBox>
       <img
