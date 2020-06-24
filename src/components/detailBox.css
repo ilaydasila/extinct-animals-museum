@@ -8,6 +8,7 @@
 }
 
 .detailBox-main {
+  overflow: auto;
   position: fixed;
   background: rgb(255, 255, 255, 0.8);
   width: 80%;
@@ -33,4 +34,14 @@
 
 .animalDetails {
   padding: 0px 15px 0px 15px;
+}
+
+.detailBox-main::-webkit-scrollbar {
+  width: 1em;
+  border-radius: 35px;
+}
+
+.detailBox-main::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: darkgrey;
 }
