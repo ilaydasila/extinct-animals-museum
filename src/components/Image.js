@@ -4,6 +4,7 @@ import "./image.css";
 
 const Image = ({
   className,
+  id,
   name,
   img,
   src,
@@ -11,17 +12,15 @@ const Image = ({
   onClick = function () {},
   children,
 }) => {
-  console.log(src);
   return (
     <img
       className={className}
+      id={id}
       name={name}
       src={img}
       alt={alt}
       onClick={onClick}
-    >
-      {children}
-    </img>
+    ></img>
   );
 };
 

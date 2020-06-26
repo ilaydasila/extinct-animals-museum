@@ -4,6 +4,8 @@ import DetailBox from "./DetailBox";
 import Image from "./Image";
 import Button from "./Button";
 
+import ReasonLogo from "./ReasonLogo";
+
 const Animal = ({
   id,
   className,
@@ -13,6 +15,7 @@ const Animal = ({
   details,
   map,
   siblingFadeHandler,
+  reasons,
 }) => {
   const [show, setShow] = useState(false);
 
@@ -34,7 +37,8 @@ const Animal = ({
         mapImg={map}
         alt={alt}
       >
-        <Button onClick={() => handleClosingClick()}>close</Button>
+        <ReasonLogo reasonLogoNames={reasons}></ReasonLogo>
+        <Button onClick={() => handleClosingClick()}>CLOSE</Button>
       </DetailBox>
       <Image
         className={className}

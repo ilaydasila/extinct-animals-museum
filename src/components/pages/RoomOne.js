@@ -16,6 +16,7 @@ const RoomOne = (props) => {
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis suscipit est, nec fermentum justo. Sed malesuada neque at nulla tempus, condimentum porta risus rutrum. Cras risus sapien, posuere ac tincidunt tincidunt, euismod nec eros. Integer id ipsum a justo ornare tristique sed ut lectus. Nulla suscipit purus in turpis maximus, vitae posuere odio consectetur. Quisque interdum vel erat ut vulputate. Aenean arcu elit, ultrices nec mattis non, aliquet id felis. Ut vestibulum, urna eget finibus ornare, dui arcu hendrerit urna, sed molestie lorem purus in tortor. Aliquam quis hendrerit lacus. Sed libero odio, elementum a nisi nec, commodo tempor ipsum. Aenean non mauris auctor, volutpat nibh vitae, gravida augue. Etiam mollis malesuada quam vel lacinia. Suspendisse tempus enim a libero tempus, quis fringilla enim fringilla. Suspendisse ex dolor, tempor sit amet enim in, congue gravida orci. Fusce tempor elit in dui consectetur, et volutpat ex ullamcorper.",
       map: "/assets/passengerPigeonMap.png",
+      reasons: ["huntingPoaching", "habitatDestruction"],
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ const RoomOne = (props) => {
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis suscipit est, nec fermentum justo. Sed malesuada neque at nulla tempus, condimentum porta risus rutrum. Cras risus sapien, posuere ac tincidunt tincidunt, euismod nec eros. Integer id ipsum a justo ornare tristique sed ut lectus. Nulla suscipit purus in turpis maximus, vitae posuere odio consectetur. Quisque interdum vel erat ut vulputate. Aenean arcu elit, ultrices nec mattis non, aliquet id felis. Ut vestibulum, urna eget finibus ornare, dui arcu hendrerit urna, sed molestie lorem purus in tortor. Aliquam quis hendrerit lacus. Sed libero odio, elementum a nisi nec, commodo tempor ipsum. Aenean non mauris auctor, volutpat nibh vitae, gravida augue. Etiam mollis malesuada quam vel lacinia. Suspendisse tempus enim a libero tempus, quis fringilla enim fringilla. Suspendisse ex dolor, tempor sit amet enim in, congue gravida orci. Fusce tempor elit in dui consectetur, et volutpat ex ullamcorper.",
       map: "/assets/seaMinkMap.png",
+      reasons: ["huntingPoaching"],
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const RoomOne = (props) => {
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis suscipit est, nec fermentum justo. Sed malesuada neque at nulla tempus, condimentum porta risus rutrum. Cras risus sapien, posuere ac tincidunt tincidunt, euismod nec eros. Integer id ipsum a justo ornare tristique sed ut lectus. Nulla suscipit purus in turpis maximus, vitae posuere odio consectetur. Quisque interdum vel erat ut vulputate. Aenean arcu elit, ultrices nec mattis non, aliquet id felis. Ut vestibulum, urna eget finibus ornare, dui arcu hendrerit urna, sed molestie lorem purus in tortor. Aliquam quis hendrerit lacus. Sed libero odio, elementum a nisi nec, commodo tempor ipsum. Aenean non mauris auctor, volutpat nibh vitae, gravida augue. Etiam mollis malesuada quam vel lacinia. Suspendisse tempus enim a libero tempus, quis fringilla enim fringilla. Suspendisse ex dolor, tempor sit amet enim in, congue gravida orci. Fusce tempor elit in dui consectetur, et volutpat ex ullamcorper.",
       map: "/assets/tecopaPupfishMap.png",
+      reasons: ["pollution", "invasiveSpecies", "habitatDestruction"],
     },
     {
       id: 4,
@@ -43,13 +46,13 @@ const RoomOne = (props) => {
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis suscipit est, nec fermentum justo. Sed malesuada neque at nulla tempus, condimentum porta risus rutrum. Cras risus sapien, posuere ac tincidunt tincidunt, euismod nec eros. Integer id ipsum a justo ornare tristique sed ut lectus. Nulla suscipit purus in turpis maximus, vitae posuere odio consectetur. Quisque interdum vel erat ut vulputate. Aenean arcu elit, ultrices nec mattis non, aliquet id felis. Ut vestibulum, urna eget finibus ornare, dui arcu hendrerit urna, sed molestie lorem purus in tortor. Aliquam quis hendrerit lacus. Sed libero odio, elementum a nisi nec, commodo tempor ipsum. Aenean non mauris auctor, volutpat nibh vitae, gravida augue. Etiam mollis malesuada quam vel lacinia. Suspendisse tempus enim a libero tempus, quis fringilla enim fringilla. Suspendisse ex dolor, tempor sit amet enim in, congue gravida orci. Fusce tempor elit in dui consectetur, et volutpat ex ullamcorper.",
       map: "/assets/dodoMap.png",
+      reasons: ["huntingPoaching", "invasiveSpecies", "habitatDestruction"],
     },
   ]);
-
   return (
     <>
       <div className={siblingFade ? "sibling-fade" : "animalList"}>
-        {animalList.map((animal, i) => {
+        {animalList.map((animal) => {
           return (
             <Animal
               className={animal.className}
@@ -61,6 +64,7 @@ const RoomOne = (props) => {
               details={animal.details}
               map={animal.map}
               siblingFadeHandler={() => setSiblingFade(!siblingFade)}
+              reasons={animal.reasons}
             />
           );
         })}
