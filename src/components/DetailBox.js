@@ -23,7 +23,7 @@ const DetailBox = ({ show, animalName, mapImg, alt, details, children }) => {
         <div>
           <img id='map' alt={alt} src={mapImg}></img>
         </div>
-        <div className='animalDetails'>{details}</div>
+        <div className='details'>{details}</div>
         {children}
       </section>
     </div>

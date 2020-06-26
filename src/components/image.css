@@ -33,6 +33,11 @@ img:hover {
 #reasonLogo:hover {
   cursor: auto;
 }
+
+.fence {
+  width: 100%;
+}
+
 .fence:hover {
   cursor: auto;
 }
