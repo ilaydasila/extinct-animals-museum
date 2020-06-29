@@ -32,7 +32,7 @@ const Animal = ({
     <div className={className}>
       <DetailBox
         show={show}
-        animalName={name}
+        title={name}
         details={details}
         mapImg={map}
         alt={alt}

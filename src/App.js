@@ -10,7 +10,10 @@ function App() {
     <div className='App'>
       <Navbar></Navbar>
       <RoomOne></RoomOne>
-      <Image className='fence' alt='fence' img='./assets/fence.png'></Image>
+      <Image className='fence' alt='fence' img='./assets/fence.png' />
+      <a href='https://github.com/ilaydasila' target='blank'>
+        <Image className='logo' alt='logo' img='./assets/logo.png' />{" "}
+      </a>
     </div>
   );
 }

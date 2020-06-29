@@ -2,16 +2,7 @@ import React from "react";
 
 import "./image.css";
 
-const Image = ({
-  className,
-  id,
-  name,
-  img,
-  src,
-  alt,
-  onClick = function () {},
-  children,
-}) => {
+const Image = ({ className, id, name, img, alt, onClick = function () {} }) => {
   return (
     <img
       className={className}

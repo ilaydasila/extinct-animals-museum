@@ -10,8 +10,8 @@ const Navbar = () => {
         <ul>
           <li>Extinct Animals Museum</li>
           <div className='nav-guide-container'>
-            <Guide className='guideBook'>GUIDE BOOK</Guide>
-            <Guide className='ruleBook'>RULE BOOK</Guide>
+            <Guide className='guideBook hvr-wobble-bottom'>GUIDE BOOK</Guide>
+            <Guide className='ruleBook hvr-wobble-bottom'>RULE BOOK</Guide>
           </div>
         </ul>
       </nav>

@@ -28,6 +28,7 @@ img:hover {
 #reasonLogo {
   max-width: 80px;
   margin-top: 45px;
+  margin: 0px 5px 0px 5px;
 }
 
 #reasonLogo:hover {
@@ -40,4 +41,12 @@ img:hover {
 
 .fence:hover {
   cursor: auto;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
 }
