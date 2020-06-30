@@ -1,7 +1,8 @@
 .rules {
-  color: rgb(0, 0, 0);
+  margin: 20px;
+  color: rgb(230, 66, 66);
   font-size: 25px;
-  text-shadow: 2px 2px 5px rgb(143, 134, 134);
+  text-shadow: 2px 2px 5px rgb(248, 241, 176);
 }
 
 p:hover {
@@ -19,4 +20,16 @@ p:hover {
 .part {
   padding: 0px 30px 0px 30px;
   color: black;
+}
+
+.intro {
+  margin: 20px 0px 60px 0px;
+}
+
+.info {
+  margin: 0px;
+}
+
+.end {
+  margin-top: 60px;
 }

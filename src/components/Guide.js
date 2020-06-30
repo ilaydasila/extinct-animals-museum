@@ -32,10 +32,10 @@ const Guide = ({ className, children }) => {
         <DetailBox show={show} title='Rule Book'>
           <div className='part'>
             <p>
-              For having more quality time during the visit, there is some rules
-              that you have to follow.
+              To have a better time during the visit, here are some rules you
+              need to follow
             </p>
-            <p>Please carefullt read the rules before visiting the museum.</p>
+            <p>Please carefully read the rules before entering the museum</p>
           </div>
           <div className='rules'>
             <p>No Crossing the Red Line</p>
@@ -44,6 +44,9 @@ const Guide = ({ className, children }) => {
             <p>No Loud Talking</p>
             <p>No Food or Drink</p>
           </div>
+          <div className='part'>
+            <p>Thank you for the visit and enjoy your stay</p>
+          </div>
           <Button onClick={() => handleClosingClick()}>CLOSE</Button>
         </DetailBox>
       );
@@ -51,55 +54,59 @@ const Guide = ({ className, children }) => {
     case "guideBook hvr-wobble-bottom":
       detailBox = (
         <DetailBox show={show} title='Guide Book'>
-          <div className='part'>
-            <p>
-              Welcome to the very basic{" "}
+          <div className='part intro'>
+            <p className='info'>
+              Welcome to the one and only{" "}
               <span style={{ color: randomColor() }}>
                 Extinct Animals Museum
               </span>
-              .This website focuses on extincted animals due to humans and
-              mainly designed for kids but also for anyone to show them how
-              humanity can have bad unforgivable effects on life of animals.
+              . This website focuses on animals extinct due to human
+              involvement. It is mainly designed for children but can also work
+              for anyone interested in how humanity can have negative influence
+              on the life of animals.
             </p>
-            <p>
+            <p className='info'>
               You can visit the museum with your{" "}
-              <span style={{ color: randomColor() }}>mouse</span>, that easy.
-              Clicking any animal in cage will open a tab with informations or
-              clicking the door image will carry you to the other room with more
-              animals. Here you can learn more about the museum and symbols
-              more.
-            </p>
-            <p>
-              Also I courage you to check rules book as well if you haven't
-              check yet.
+              <span style={{ color: randomColor() }}>mouse</span>, it's that
+              easy. Clicking any animal in the exhibition will open a tab with
+              information and clicking the door will bring you to the other room
+              with more animals.
             </p>
           </div>
           <div className='part'>
-            <p>
-              When you click to any animal it will pop-up a tab with some pieces
-              of information.
+            <p>Here you can learn more about the museum.</p>
+            <p className='info'>
+              When you click on an animal you will find out these important
+              information:
             </p>
-            <p>
+            <p className='info'>
               <span style={{ color: randomColor(), fontSize: "35px" }}>1</span>{" "}
-              The name of animal,
+              The name of animal
             </p>
-            <p>
+            <p className='info'>
               <span style={{ color: randomColor(), fontSize: "35px" }}>2</span>{" "}
-              A map with red zones to show was the posibble to find the animal,
+              A map with red zones showing where was it posibble to find the
+              animal
             </p>
-            <p>
+            <p className='info'>
               <span style={{ color: randomColor(), fontSize: "35px" }}>3</span>{" "}
-              Information text about the animal,
+              Informational text about the animal
             </p>
-            <p>
+            <p className='info'>
               <span style={{ color: randomColor(), fontSize: "35px" }}>4</span>{" "}
-              The reasons symbols which in
+              Symbol explaning how it was brought to extinction
             </p>
           </div>
           <ReasonLogo
             showName='true'
             reasonLogoNames={reasonLogoNames}
           ></ReasonLogo>
+          <div className='part end'>
+            <p>
+              I also encourage you to check the museum rules if you haven't
+              checked it yet
+            </p>
+          </div>
           <Button onClick={() => handleClosingClick()}>CLOSE</Button>
         </DetailBox>
       );
