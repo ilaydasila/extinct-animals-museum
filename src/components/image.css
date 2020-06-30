@@ -21,6 +21,13 @@
   max-width: 180px;
   margin-top: 200px;
 }
+
+.tasmanianTiger img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 250px;
+}
+
 img:hover {
   cursor: pointer;
 }
