@@ -47,6 +47,6 @@ img:hover {
   width: 60px;
   height: 60px;
   position: absolute;
-  right: 3px;
-  bottom: 3px;
+  right: 0px;
+  bottom: 0;
 }

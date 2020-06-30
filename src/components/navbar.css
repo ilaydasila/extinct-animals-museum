@@ -20,7 +20,7 @@ li {
   align-items: center;
 }
 li:hover {
-  cursor: context-menu;
+  cursor: default;
 }
 
 .nav-guide-container {
