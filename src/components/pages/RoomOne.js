@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import Animal from "../Animal";
 
+import ScrollContainer from "react-indiana-drag-scroll";
+
 import "./roomOne.css";
 
 const RoomOne = (props) => {
@@ -60,7 +62,7 @@ const RoomOne = (props) => {
     },
   ]);
   return (
-    <>
+    <ScrollContainer className='scroll-container'>
       <div className={siblingFade ? "sibling-fade" : "animalList"}>
         {animalList.map((animal) => {
           return (
@@ -79,7 +81,7 @@ const RoomOne = (props) => {
           );
         })}
       </div>
-    </>
+    </ScrollContainer>
   );
 };
 

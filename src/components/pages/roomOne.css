@@ -1,14 +1,10 @@
 .animalList {
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
 }
 
 .sibling-fade {
   visibility: hidden;
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
 }
 
 .sibling-fade > * {
@@ -27,4 +23,12 @@
   opacity: 1;
   transform: scale(1);
   transition-delay: 0ms, 0ms;
+}
+
+.scroll-container {
+  margin: 0px;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
 }

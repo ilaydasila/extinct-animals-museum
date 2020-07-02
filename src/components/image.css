@@ -1,31 +1,26 @@
 .passengerPigeon img {
-  width: 100%;
   max-width: 160px;
-  margin-top: 250px;
 }
 
 .seaMink img {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 200px;
+  max-width: 250px;
 }
 
 .tecopaPupfish img {
-  width: 100%;
-  max-width: 180px;
-  margin-top: 100px;
+  max-width: 200px;
 }
 
 .dodo img {
-  width: 100%;
-  max-width: 180px;
-  margin-top: 200px;
+  max-width: 200px;
 }
 
 .tasmanianTiger img {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 250px;
+  max-width: 340px;
+}
+
+img {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 img:hover {
@@ -42,18 +37,108 @@ img:hover {
   cursor: auto;
 }
 
-.fence {
-  width: 100%;
-}
-
-.fence:hover {
-  cursor: auto;
-}
-
 .logo {
   width: 60px;
   height: 60px;
   position: fixed;
   right: 2px;
   bottom: 2px;
+}
+
+@media (min-width: 480px) {
+  .passengerPigeon img {
+    max-width: 160px;
+  }
+
+  .seaMink img {
+    max-width: 260px;
+  }
+
+  .tecopaPupfish img {
+    max-width: 210px;
+  }
+
+  .dodo img {
+    max-width: 160px;
+  }
+
+  .tasmanianTiger img {
+    max-width: 310px;
+  }
+
+  img {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  #reasonLogo {
+    max-width: 80px;
+    margin-top: 45px;
+    margin: 0px 5px 0px 5px;
+  }
+
+  #reasonLogo:hover {
+    cursor: auto;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .passengerPigeon img {
+    max-width: 240px;
+  }
+
+  .seaMink img {
+    max-width: 350px;
+  }
+
+  .tecopaPupfish img {
+    max-width: 240px;
+  }
+
+  .dodo img {
+    max-width: 220px;
+  }
+
+  .tasmanianTiger img {
+    max-width: 440px;
+  }
+
+  img {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  #reasonLogo {
+    max-width: 80px;
+    margin-top: 45px;
+    margin: 0px 5px 0px 5px;
+  }
+
+  #reasonLogo:hover {
+    cursor: auto;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+  }
 }
