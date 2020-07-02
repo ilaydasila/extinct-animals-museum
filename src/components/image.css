@@ -96,11 +96,11 @@ img:hover {
 
 @media (min-width: 1000px) and (min-height: 700px) {
   .passengerPigeon img {
-    max-width: 240px;
+    max-width: 200px;
   }
 
   .seaMink img {
-    max-width: 350px;
+    max-width: 300px;
   }
 
   .tecopaPupfish img {
@@ -108,11 +108,11 @@ img:hover {
   }
 
   .dodo img {
-    max-width: 300px;
+    max-width: 230px;
   }
 
   .tasmanianTiger img {
-    max-width: 390px;
+    max-width: 330px;
   }
 
   img {
