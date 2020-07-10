@@ -100,3 +100,11 @@ li:hover {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+/*Media Queries*/
+
+@media (max-width: 768px) {
+  .brand-name {
+    display: none;
+  }
+}
