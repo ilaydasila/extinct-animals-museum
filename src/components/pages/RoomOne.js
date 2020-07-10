@@ -26,7 +26,7 @@ const RoomOne = (props) => {
       name: "Sea Mink",
       img: "/assets/seaMink.png",
       details:
-        " The Mink is a soft creature that related to ermines, ferrets and weasels and look much like their relatives. Many members of the weasel family, minks included, have been hunted for their fur. It tends to be very soft and warm, especially in the winter when they grow thicker coats. The sea mink was no exception, and this is the main reason they went extinct. Until very recently, there were no laws that regulated trapping or hunting in order to protect endangered or potentially endangered species. That meant hunters and trappers could take as many mink as they wanted. There was a huge demand for fur like this in Europe, and so the sea mink were hunted to extinction.",
+        " The Mink is a soft creature that is related to ermines, ferrets and weasels and look much like their relatives. Many members of the weasel family, minks included, have been hunted for their fur. It tends to be very soft and warm, especially in the winter when they grow thicker coats. The sea mink was no exception, and this is the main reason they went extinct. Until very recently, there were no laws that regulated trapping or hunting in order to protect endangered or potentially endangered species. That meant hunters and trappers could take as many mink as they wanted. There was a huge demand for fur like this in Europe, and so the sea mink were hunted to extinction.",
       map: "/assets/seaMinkMap.png",
       reasons: ["huntingPoaching"],
     },
@@ -36,7 +36,7 @@ const RoomOne = (props) => {
       name: "Tecopa Pupfish",
       img: "/assets/tecopaPupfish.png",
       details:
-        "The Tecopa pupfish was a species of fish that lived in hot springs in the Mojave Desert, USA and was only discovered in the 19th century.  The Tecopa Pupfish became extinct by cause of the drying out of waters, climate change and the introduction of other invasive species of fish to its natural habitat. In 1965, the springs where they lived were merged together to build a bathhouse, and the water became too hot and salty for the fish to survive. As a result, in 1970, the poor pupfish was added to the Endangered Species List – unfortunately, it was too late. By 1981, it was declared Extinct – another awful outcome of human development. The last sighting of a Tecopa pupfish was seen in 1970.",
+        "The Tecopa pupfish was a species of fish that lived in hot springs in the Mojave Desert, USA, and was only discovered in the 19th century.  The Tecopa Pupfish became extinct by cause of the drying out of waters, climate change and the introduction of other invasive species of fish to its natural habitat. In 1965, the springs where they lived were merged together to build a bathhouse, and the water became too hot and salty for the fish to survive. As a result, in 1970, the poor pupfish was added to the Endangered Species List – unfortunately, it was too late. By 1981, it was declared Extinct – another awful outcome of human development. The last sighting of a Tecopa pupfish was seen in 1970.",
       map: "/assets/tecopaPupfishMap.png",
       reasons: ["pollution", "invasiveSpecies", "habitatDestruction"],
     },
@@ -56,9 +56,19 @@ const RoomOne = (props) => {
       name: "Dodo",
       img: "/assets/dodo.png",
       details:
-        "The dodo is a flightless bird, lived on only one island, Mauritius(they were endemic animals). Dodos were in the same family as the pigeon. Since they evolved in isolation from many predators, the dodo lost the power of flight because it was no advantage to them. Also they were not aware of humans and they were fearless of them. Because of these the dodo became easy pray for sailors. They got hunted but their main extinction reason was not this. While human population was rising on the island, they introduced other animals, including dogs, pigs, cats, rats, and crab-eating macaques, which plundered dodo nests and competed for the limited food resources. At the same time, humans destroyed the forest habitat of the dodos. The impact of the introduced animals on the dodo population, especially the pigs and macaques, is today considered more severe than that of hunting.",
+        "The dodo is a flightless bird that lived on only one island, Mauritius(they were endemic animals). Dodos were in the same family as the pigeon. Since they evolved in isolation from many predators, the dodo lost the power of flight because it was not advantageous to them. Also they were not aware of humans and they were fearless of them. Because of these, the dodo became easy pray for sailors. They got hunted but their main extinction reason was not that. While human population was rising on the island, they introduced other animals, including dogs, pigs, cats, rats, and crab-eating macaques, which plundered dodo nests and competed for the limited food resources. At the same time, humans destroyed the forest habitat of the dodos. The impact of the newly introduced animals on the dodo population, especially the pigs and macaques, is today considered more severe than that of hunting.",
       map: "/assets/dodoMap.png",
       reasons: ["huntingPoaching", "invasiveSpecies", "habitatDestruction"],
+    },
+    {
+      id: 6,
+      className: "westAfricanBlackRhino",
+      name: "West African Black Rhino",
+      img: "/assets/westAfricanBlackRhino.png",
+      details:
+        "The black rhino is a species of rhinoceros. It lived in eastern and central Africa including Kenya, Tanzania, Cameroon, South Africa, Namibia, Zimbabwe, and Angola. There is some key reasons why it went extinct. One reason was the loss of habitat. As humans moved in to the West African black rhino's home range, they cleared the rhino's native habitat in order to build farms and houses. Another major issue was big game hunting. Before hunting regulations and conservation efforts, people would kill rhinos (and other animals) in large numbers just for sport.  But the main reason the West African black rhino went extinct is because of poachers or illegal hunters. In traditional Chinese medicine, rhino horns are used to treat basically everything, from impotence to fevers to cancer. It was promoted to use these, instead of Western medicine and it caused the most damage to the west African black rhino.",
+      map: "/assets/westAfricanBlackRhinoMap.png",
+      reasons: ["huntingPoaching", "habitatDestruction"],
     },
   ]);
   return (
