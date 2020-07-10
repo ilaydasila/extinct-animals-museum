@@ -3,7 +3,6 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import RoomOne from "./components/pages/RoomOne";
-import Image from "./components/Image";
 
 function App() {
   return (
