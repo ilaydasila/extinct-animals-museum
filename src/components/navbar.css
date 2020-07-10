@@ -107,4 +107,11 @@ li:hover {
   .brand-name {
     display: none;
   }
+
+  .nav-guide-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 30px auto 0;
+  }
 }
