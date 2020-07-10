@@ -32,3 +32,21 @@
   left: 50%;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .sibling-fade > * {
+    visibility: visible;
+  }
+
+  .sibling-fade > * {
+    transition: none;
+  }
+
+  .sibling-fade:hover > * {
+    opacity: 1;
+  }
+
+  .sibling-fade > *:hover {
+    opacity: 1;
+  }
+}
