@@ -7,6 +7,12 @@ import { randomColor } from "../utils/randomColorGenerator";
 
 import "./guide.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubSquare,
+  faTumblrSquare,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Guide = ({ className, children }) => {
   const [show, setShow] = useState(false);
 
@@ -31,11 +37,13 @@ const Guide = ({ className, children }) => {
       detailBox = (
         <DetailBox show={show} title='Rule Book'>
           <div className='part'>
-            <p>
+            <p className='rule-info'>
               To have a better time during the visit, here are some rules you
               need to follow
             </p>
-            <p>Please carefully read the rules before entering the museum</p>
+            <p className='rule-info-last'>
+              Please carefully read the rules before entering the museum
+            </p>
           </div>
           <div className='rules'>
             <p>No Crossing the Red Line</p>
@@ -107,6 +115,32 @@ const Guide = ({ className, children }) => {
               checked it yet
             </p>
           </div>
+          <Button onClick={() => handleClosingClick()}>CLOSE</Button>
+        </DetailBox>
+      );
+      break;
+    case "about hvr-wobble-bottom":
+      detailBox = (
+        <DetailBox show={show} title='About'>
+          <p className='about'>
+            Code and Drawings by <span>IlaydaSila</span>
+          </p>
+          <p className='links'>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://github.com/ilaydasila'
+            >
+              <FontAwesomeIcon className='github' icon={faGithubSquare} />
+            </a>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://ilaydasilart.tumblr.com'
+            >
+              <FontAwesomeIcon className='tumblr' icon={faTumblrSquare} />
+            </a>
+          </p>
           <Button onClick={() => handleClosingClick()}>CLOSE</Button>
         </DetailBox>
       );

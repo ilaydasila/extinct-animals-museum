@@ -22,6 +22,10 @@ p:hover {
   color: black;
 }
 
+.rule-info {
+  margin: 30px 0 30px;
+}
+
 .intro {
   margin: 20px 0px 60px 0px;
 }
@@ -32,4 +36,44 @@ p:hover {
 
 .end {
   margin-top: 60px;
+}
+
+.about {
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.rule-info-last {
+  margin-bottom: 50px;
+}
+
+.about span {
+  color: #b66b6b;
+  font-weight: 700;
+}
+
+.github {
+  color: #211f1f;
+  transition: 0.3s;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.github:hover {
+  color: #635d5d;
+}
+
+.tumblr {
+  color: #34465d;
+  transition: 0.3s;
+  margin-bottom: 80px;
+}
+
+.tumblr:hover {
+  color: #536f94;
+}
+
+a {
+  margin: 20px;
+  font-size: 1.5rem;
 }
