@@ -52,9 +52,10 @@ const Guide = ({ className, children }) => {
             <p>No Loud Talking</p>
             <p>No Food or Drink</p>
           </div>
-          <div className='part'>
-            <p>Thank you for the visit and enjoy your stay</p>
-          </div>
+          <p className='rule-info-last '>
+            Thank you for the visit and enjoy your stay
+          </p>
+
           <Button onClick={() => handleClosingClick()}>CLOSE</Button>
         </DetailBox>
       );

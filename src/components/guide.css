@@ -41,11 +41,11 @@ p:hover {
 .about {
   font-size: 2rem;
   margin-top: 100px;
-  margin-bottom: 30px;
 }
 
 .rule-info-last {
-  margin-bottom: 50px;
+  color: black;
+  margin-bottom: 30px;
 }
 
 .about span {
@@ -53,11 +53,14 @@ p:hover {
   font-weight: 700;
 }
 
+.links {
+  margin-bottom: 50px;
+}
+
 .github {
   color: #211f1f;
   transition: 0.3s;
   margin-top: 30px;
-  margin-bottom: 80px;
 }
 .github:hover {
   color: #635d5d;
@@ -66,7 +69,6 @@ p:hover {
 .tumblr {
   color: #34465d;
   transition: 0.3s;
-  margin-bottom: 80px;
 }
 
 .tumblr:hover {
