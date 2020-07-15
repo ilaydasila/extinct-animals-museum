@@ -1,6 +1,6 @@
 ## Extinct Animals Museum
 
-### A virtual museum app that displays a variety of extinct animals around the world. Mainly designed for kids but suitable for anyone who is sensible!
+### A virtual museum app that displays a variety of extinct animals around the world. Designed mainly for children, but also suitable for anyone who is interested.
 
 ### [Extinct Animals Museum](https://extinct-animals-museum.netlify.app/)
 
