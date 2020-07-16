@@ -78,8 +78,8 @@ const Guide = ({ className, children }) => {
               You can visit the museum with your{" "}
               <span style={{ color: randomColor() }}>mouse</span>, it's that
               easy. Clicking any animal in the exhibition will open a tab with
-              information and clicking the door will bring you to the other room
-              with more animals.
+              information and you can slide between animals to visit the all
+              museum animals.
             </p>
           </div>
           <div className='part'>
