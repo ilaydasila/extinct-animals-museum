@@ -36,6 +36,10 @@ li:hover {
   cursor: pointer;
 }
 
+.brand-name {
+  padding: 10px;
+}
+
 @-webkit-keyframes hvr-wobble-bottom {
   16.65% {
     -webkit-transform: skew(-12deg);
@@ -104,6 +108,12 @@ li:hover {
 /*Media Queries*/
 
 @media (max-width: 768px) {
+  .navbar ul {
+    justify-content: center;
+  }
+  .nav-guide-container li {
+    padding: 10px;
+  }
   .brand-name {
     display: none;
   }
